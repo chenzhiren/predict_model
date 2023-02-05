@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score
 from PIL import Image
-key_image=Image.open('.\logit.png')
+key_image=Image.open('logit.png')
 st.set_page_config(
     layout='wide'
 )
