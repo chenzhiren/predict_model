@@ -4,7 +4,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score
-import matplotlib.pyplot as plt
 from PIL import Image
 key_image=Image.open('logit.png')
 st.set_page_config(
