@@ -5,9 +5,8 @@ from sklearn.linear_model import Lasso
 from sklearn.linear_model import Ridge
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import r2_score
-import matplotlib.pyplot as plt
 from PIL import Image
-key_image=Image.open('lasso.png')
+key_image=Image.open('.\lasso.png')
 st.set_page_config(
     layout='wide'
 )
