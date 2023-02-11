@@ -14,9 +14,9 @@ st.header('Lasso回归和岭回归')
 with st.expander('模型释义'):
     st.image(key_image)
 st.subheader('Lasso回归和岭回归实践')
-result=st.file_uploader('请上传已清洗完成的数据，csv格式',type=['csv'])
+result=st.file_uploader('请上传已清洗完成的数据，包含因变量和自变量，csv格式',type=['csv'])
 if result is not None:
-    data = pd.read_csv(result, skiprows=1)
+    data = pd.read_csv(result)
     st.write('请选择各项参数')
     y = st.selectbox('自变量y', list(data.columns))
     x= st.multiselect('因变量x',list(data.columns))
